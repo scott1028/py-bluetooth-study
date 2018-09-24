@@ -8,7 +8,7 @@ import socket
 # Get from: "$ bt-device -l"
 serverMACAddress = 'D4:0B:1A:01:C6:20'  # host bluetooth device address
 # serverMACAddress = '4c:DD:31:7'  # host bluetooth device address
-port = 3  # this must match to server.py
+port = 1  # this must match to server.py
 s = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 s.connect((serverMACAddress, port))
 while 1:
